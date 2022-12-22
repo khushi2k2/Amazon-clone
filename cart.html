@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Beauty & Bling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="amazon-clone-style.css">
+    <script src="https://use.fontawesome.com/13e7a00b74.js"></script>
+    <link rel="shortcut icon" href="images/baricon.ico">
+</head>
+<body>
+    <header id="back-to-top">
+        <div class="logo-img">
+          <img src="https://i0.wp.com/mynintendonews.com/wp-content/uploads/2019/06/amazon_logo.jpg?ssl=1" alt="" width="200px" height="150px">
+        </div>
+  
+        <div class="home-nav">
+           
+               <div class="nav1"><a href="amazon-clone.html" target="_blank">HOME</a></div>
+               <div class="nav1"><a href="about.html" target="_blank">ABOUT</a></div>
+               <div class="nav1"><a href="contact.html"  target="_blank">CONTACT</a></div>
+           
+          </div>
+   
+          <!-- <div class="search-bar">
+           <form action="/action_page.php">  -->
+              <input class="search-bar" type="text" placeholder="Search or type category" name="search">
+           <!-- </div> -->
+  
+           <div class="search-btn">
+              <!-- <button type="go" id="search">SEARCH</button>  -->
+              <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/search-2758901-2290828.png" alt="" width="40px" height="40px">
+           </div>
+            <!-- </form> -->
+          
+  
+            <!-- <button class="s" onclick="window.location.href = 'sign_up.html';" >Sign Up</button> -->
+            <!-- <div class="sign-in"> -->
+            <button class="sign-in" onclick="window.location.href = 'login.html';" >sign in</button>
+          <!-- </div> -->
+  
+          <a href="cart.html">
+            <div class="cart-img">
+            <img src="https://cdn3.iconfinder.com/data/icons/e-commerce-2-1/256/2-512.png" alt="" width="50px" height="50px">
+          </div></a>
+  
+      </header>
+
+
+<!-- ----------------------------cart items details------------------------------ -->
+
+<div class="small-container cart-page">
+<table>
+    <tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Subtotal</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/pic1.jpeg">
+                <div>
+                    <p>Heart Pendant</p>
+                    <small>&#x20B9; 209</small>
+                    <br>
+                    <a href="">Remove</a>
+                
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>&#x20B9; 209</td>
+
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/c1.jpg">
+                <div>
+                    <p>Flower drop Earrings</p>
+                    <small>&#x20B9; 399</small>
+                    <br>
+                    <a href="">Remove</a>
+                
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>&#x20B9; 399</td>
+
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/a10.jpg">
+                <div>
+                    <p>Silver Gem Ring</p>
+                    <small>&#x20B9; 1199</small>
+                    <br>
+                    <a href="">Remove</a>
+                
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>&#x20B9; 1199</td>
+
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="images/g1.jpg">
+                <div>
+                    <p>Infinity Heart Bangle</p>
+                    <small>&#x20B9; 499</small>
+                    <br>
+                    <a href="">Remove</a>
+                
+                </div>
+            </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>&#x20B9; 499</td>
+
+    </tr>
+</table>
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>&#x20B9; 2306</td>
+        </tr>
+        <tr>
+            <td>Tax &#64;18 &#37; </td>
+            <td>&#x20B9; 415</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>&#x20B9; 2721</td>
+        </tr>
+    </table>
+</div>
+
+</div>
+
+<!------------Footer-------->
+<footer >
+    <div class="end">
+    <div class="know">
+      <h2>Get to know us</h2>
+      <li>About us</li>
+      <li>Careers</li>
+      <li>Amazon Cares</li>
+    </div>
+    <div class="connect">
+        <h2>Connect with us</h2>
+        <li><a href="https://www.facebook.com/AmazonIndiaNews/">facebook</a></li>
+        <li><a href="https://twitter.com/AmazonNews_IN">twitter</a></li>
+        <li>instagram</li>
+    </div>
+    <div>
+    <h2>Let Us Help You</h2>
+    <li>Your Account</li>
+    <li>Amazon App Download</li>
+    <li>Amazon Assistant Download</li>
+    <li>Help</li>
+   </div><br>
+</div>
+<hr>
+<div class="choice">
+    <img src="https://jungletopp.com/wp-content/uploads/2020/08/Amazon-1-1.jpg" alt="" width="120px" height="70px">
+</div>
+</footer>
+<!---------js for toggle menu------->
+<script>
+    var menuitems=document.getElementById("menuitems")
+
+    menuitems.style.maxHeight="0px";
+
+    function menutoggle(){
+        if (menuitems.style.maxHeight=="0px")
+        {
+            menuitems.style.maxHeight="200px"
+        }
+        else{
+            menuitems.style.maxHeight="0px"
+        }
+    }
+</script>
+
+</body>
+</html>
